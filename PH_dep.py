@@ -3,9 +3,8 @@ from telebot import types
 import os
 from telebot import apihelper
 
-#bot = telebot.TeleBot('814011588:AAERuDGx6NdyC-9TQtU8i26_lhO6lfb-5C8')  # kombayn_bot
-token = os.environ.get('BOT_TOKEN')
-bot.run(str(token))
+bot = telebot.TeleBot(BOT_TOKEN)  # kombayn_bot
+#token = os.environ.get('BOT_TOKEN')
 @bot.message_handler(content_types=['text'])
 
 def send_text(message):
