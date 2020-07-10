@@ -1,6 +1,5 @@
 discord.py
 telebot
-import telebot
 types
 os
 apihelper
