@@ -4,6 +4,7 @@ import os
 from telebot import apihelper
 
 bot = telebot.TeleBot(BOT_TOKEN)  # kombayn_bot
+bot.run(str(BOT_TOKEN))
 #token = os.environ.get('BOT_TOKEN')
 @bot.message_handler(content_types=['text'])
 
