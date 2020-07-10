@@ -49,4 +49,5 @@ def send_text(message):
             bot.send_message(call.message.chat.id, msg)
 
 bot.polling(none_stop=True, interval=0)
+bot.run(str(token))
 
