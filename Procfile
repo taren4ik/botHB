@@ -1,1 +1,1 @@
-worker: python PH_dep.py
+worker: python3 PH_dep.py
