@@ -5,7 +5,7 @@ from telebot import apihelper
 
 #bot = telebot.TeleBot('814011588:AAERuDGx6NdyC-9TQtU8i26_lhO6lfb-5C8')  # kombayn_bot
 token = os.environ.get('BOT_TOKEN')
-
+bot.run(str(token))
 @bot.message_handler(content_types=['text'])
 
 def send_text(message):
@@ -49,5 +49,5 @@ def send_text(message):
             bot.send_message(call.message.chat.id, msg)
 
 bot.polling(none_stop=True, interval=0)
-bot.run(str(token))
+
 
