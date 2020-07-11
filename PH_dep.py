@@ -1,7 +1,6 @@
 import telebot
 from telebot import types
 import os
-from telebot import apihelper
 
 #bot = telebot.TeleBot(BOT_TOKEN)  # kombayn_bot
 
