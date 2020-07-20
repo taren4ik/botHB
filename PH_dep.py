@@ -2,10 +2,10 @@ import telebot
 from telebot import types
 import os
 
-#bot = telebot.TeleBot(BOT_TOKEN)  # kombayn_bot
+#token = os.environ.get('BOT_TOKEN')
+#bot.run(str(BOT_TOKEN))
+bot = telebot.TeleBot(BOT_Token) 
 
-token = os.environ.get('BOT_TOKEN')
-bot.run(str(BOT_TOKEN))
 @bot.message_handler(content_types=['text'])
 
 def send_text(message):
