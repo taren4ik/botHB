@@ -1,5 +1,4 @@
 import telebot
-from telebot import types
 import os
 
 token = os.environ.get('BOT_Token')
@@ -35,7 +34,7 @@ def send_text(message):
         if call.data == "yes_me":
 
             markup1 = types.InlineKeyboardMarkup()
-            btn_my_site = types.InlineKeyboardButton(text='My site', url='https://redtube.com/pornostar')
+            btn_my_site = types.InlineKeyboardButton(text='My site', url='https://redtube.com/pornstar')
             markup1.add(btn_my_site)
             bot.send_message(message.chat.id, "Push button and go to site.", reply_markup=markup1)
                 #msg = '111'
