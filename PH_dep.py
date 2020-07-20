@@ -5,10 +5,7 @@ import os
 token = os.environ.get('BOT_Token')
 bot = telebot.TeleBot(token) 
 #bot.run(str(BOT_Token))
-
-
 @bot.message_handler(content_types=['text'])
-
 def send_text(message):
     if message.text == '/start':
         # Пишем приветствие
