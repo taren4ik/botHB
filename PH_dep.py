@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import os
 
-#token = os.environ.get('BOT_TOKEN')
+token = os.environ.get('BOT_Token')
 #bot.run(str(BOT_TOKEN))
 bot = telebot.TeleBot(BOT_Token) 
 
