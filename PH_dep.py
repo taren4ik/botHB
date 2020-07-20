@@ -3,7 +3,7 @@ from telebot import types
 import os
 
 token = os.environ.get('BOT_Token')
-#bot.run(str(BOT_TOKEN))
+bot.run(str(BOT_Token))
 bot = telebot.TeleBot(BOT_Token) 
 
 @bot.message_handler(content_types=['text'])
