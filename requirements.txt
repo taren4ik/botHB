@@ -1,4 +1,5 @@
 pyTelegramBotAPI
 telebot
 python-telegram-bot
+types
 
