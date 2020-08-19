@@ -1,11 +1,12 @@
 import telebot
-from telebot import *
-import os
+from telebot import types
+from telebot import apihelper
 
-token = os.environ.get('BOT_Token')
-bot = telebot.TeleBot(token) 
-#bot.run(str(BOT_Token))
+bot = telebot.TeleBot('814011588:AAERuDGx6NdyC-9TQtU8i26_lhO6lfb-5C8') 
+
+
 @bot.message_handler(content_types=['text'])
+
 def send_text(message):
     if message.text == '/start':
         # Пишем приветствие
@@ -35,7 +36,7 @@ def send_text(message):
         if call.data == "yes_me":
 
             markup1 = types.InlineKeyboardMarkup()
-            btn_my_site = types.InlineKeyboardButton(text='My site', url='https://redtube.com/pornstar')
+            btn_my_site = types.InlineKeyboardButton(text='My site', url='https://redtube.com/pornostar')
             markup1.add(btn_my_site)
             bot.send_message(message.chat.id, "Push button and go to site.", reply_markup=markup1)
                 #msg = '111'
@@ -47,5 +48,4 @@ def send_text(message):
             bot.send_message(call.message.chat.id, msg)
 
 bot.polling(none_stop=True, interval=0)
-
 
